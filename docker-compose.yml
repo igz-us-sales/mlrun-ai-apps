@@ -4,8 +4,8 @@ services:
   streamlit-iris:
     restart: unless-stopped
     build: .
-    image: nschenone/streamlit-iris
-    container_name: streamlit-iris
+    image: mlrun-ai-apps
+    container_name: mlrun-ai-apps
     environment:
       - PORT=${PORT:-8501}
     ports:
