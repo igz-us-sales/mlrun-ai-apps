@@ -7,11 +7,17 @@ This is a simple [Streamlit](https://streamlit.io/) application that showcases h
 
 Within this app, there are multiple demos with interactive UI's that inference live machine models via [MLRun model serving functions](https://docs.mlrun.org/en/latest/serving/model-serving-get-started.html).
 
-<p align="left"><img src="doc/img/heart_page.png" alt="MLRun logo" width="800"/></p>
+<p align="center">
+    <img src="doc/img/heart_page_50.png" alt="Heart Disease Prediction UI" width="900"/>
+    <p align="center">Heart Disease Prediction UI</p>
+</p>
 
-In addition to the interactive UI, there are also short code snippets that show how behind the scenes of how the models were deployed and inferenced within the application.
+In addition to the interactive UI, there are also short code snippets that show the "behind the scenes" of how the models are deployed and inferenced within the application.
 
-<p align="left"><img src="doc/img/iris_page.png" alt="MLRun logo" width="800"/></p>
+<p align="center">
+    <img src="doc/img/iris_page_50.png" alt="Iris Inferencing and Deployment" width="900"/>
+    <p align="center">Iris Inferencing and Deployment</p>
+</p>
 
 ## Getting Started
 There are 2 ways to get started:
