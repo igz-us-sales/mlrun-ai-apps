@@ -9,14 +9,14 @@ Within this app, there are multiple demos with interactive UI's that inference l
 
 <p align="center">
     <img src="doc/img/heart_page_50.png" alt="Heart Disease Prediction UI" width="900"/>
-    <figcaption align="center">Heart Disease Prediction UI</figcaption>
+    <p align="center">Heart Disease Prediction UI</p>
 </p>
 
 In addition to the interactive UI, there are also short code snippets that show the "behind the scenes" of how the models are deployed and inferenced within the application.
 
 <p align="center">
     <img src="doc/img/iris_page_50.png" alt="Iris Inferencing and Deployment" width="900"/>
-    <figcaption align="center">Iris Inferencing and Deployment</figcaption>
+    <p align="center">Iris Inferencing and Deployment</p>
 </p>
 
 ## Getting Started
