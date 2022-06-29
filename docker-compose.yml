@@ -6,5 +6,7 @@ services:
     build: .
     image: nschenone/streamlit-iris
     container_name: streamlit-iris
+    environment:
+      - PORT=${PORT:-8501}
     ports:
-    - '8501:8501'
+      - ${PORT:-8501}:${PORT:-8501}

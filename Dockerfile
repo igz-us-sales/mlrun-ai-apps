@@ -14,5 +14,4 @@ RUN pip install -r requirements.txt
 COPY src/ .
 
 #Run the container
-ENTRYPOINT [ "streamlit", "run" ]
-CMD [ "app.py" ]
+CMD ["sh", "-c", "streamlit run --server.port $PORT app.py"]
