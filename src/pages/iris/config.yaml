@@ -1,0 +1,17 @@
+iris_classes:
+  0:
+    name: Iris-Setosa
+    image: pages/iris/img/Iris-Setosa.jpg
+  1:
+    name: Iris-Versicolour
+    image: pages/iris/img/Iris-Versicolour.jpg
+  2:
+    name: Iris-Virginica
+    image: pages/iris/img/Iris-Virginica.jpg
+
+snippets:
+  deployment_code: pages/iris/snippets/deployment.py
+  deployment_logs: pages/iris/snippets/deployment_logs.txt
+  inferencing_code: pages/iris/snippets/inferencing.py
+
+model_path: "https://s3.wasabisys.com/iguazio/models/iris/model.pkl"

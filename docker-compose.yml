@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  streamlit-iris:
+    restart: unless-stopped
+    build: .
+    image: nschenone/streamlit-iris
+    container_name: streamlit-iris
+    ports:
+    - '8501:8501'

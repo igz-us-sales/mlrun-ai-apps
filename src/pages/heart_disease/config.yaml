@@ -1,0 +1,64 @@
+age_mapping:
+  age:
+    ranges:
+      adult:
+      - 18
+      - 65
+      child:
+      - 3
+      - 18
+      elder:
+      - 65
+      - 120
+      toddler:
+      - 0
+      - 3
+
+one_hot_encoder_mapping:
+  age_mapped:
+  - toddler
+  - child
+  - adult
+  - elder
+  cp:
+  - typical_angina
+  - atypical_angina
+  - non_anginal_pain
+  - asymtomatic
+  exang:
+  - 'no'
+  - 'yes'
+  fbs:
+  - false
+  - true
+  sex:
+  - male
+  - female
+  slope:
+  - downsloping
+  - upsloping
+  - flat
+  thal:
+  - normal
+  - reversable_defect
+  - fixed_defect
+
+snippets:
+  deployment_code: pages/heart_disease/snippets/deployment.py
+  deployment_logs: pages/heart_disease/snippets/deployment_logs.txt
+  inferencing_code: pages/heart_disease/snippets/inferencing.py
+
+model_path: "pages/heart_disease/models/heart_classifier.pkl"
+
+heart_classes:
+  0:
+    name: No Disease
+    image: pages/heart_disease/img/happy-heart.png
+  1:
+    name: Disease
+    image: pages/heart_disease/img/sad-heart.png
+
+restecg_classes:
+  0: Normal
+  1: ST-T Wave Abnormality
+  2: Left Ventricular Hypertrophy

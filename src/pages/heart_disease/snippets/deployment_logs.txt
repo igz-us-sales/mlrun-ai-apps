@@ -1,0 +1,8 @@
+> 2022-01-24 23:26:53,810 [info] Starting remote function deploy
+2022-01-24 23:26:54  (info) Deploying function
+2022-01-24 23:26:54  (info) Building
+2022-01-24 23:26:54  (info) Staging files and preparing base images
+2022-01-24 23:26:54  (info) Building processor image
+2022-01-24 23:27:05  (info) Build complete
+2022-01-24 23:27:27  (info) Function deploy complete
+> 2022-01-24 23:27:28,171 [info] successfully deployed function: {'internal_invocation_urls': ['nuclio-heart-v2-model-server.mlrun-ai-apps.svc.cluster.local:8080'], 'external_invocation_urls': ['192.168.65.4:30544']}
