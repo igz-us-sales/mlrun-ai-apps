@@ -9,7 +9,7 @@ Within this app, there are multiple demos with interactive UI's that inference l
 
 <p align="left">
     <figure align="center">
-        <img src="doc/img/heart_page.png" alt="Heart Disease Prediction UI" width="800"/>
+        <img src="doc/img/heart_page_50.png" alt="Heart Disease Prediction UI" width="800"/>
         <figcaption>Heart Disease Prediction UI</figcaption>
     </figure>
 </p>
@@ -18,7 +18,7 @@ In addition to the interactive UI, there are also short code snippets that show 
 
 <p align="center">
     <figure align="center">
-        <img src="doc/img/iris_page.png" alt="Iris Inferencing and Deployment" width="800"/>
+        <img src="doc/img/iris_page_50.png" alt="Iris Inferencing and Deployment" width="800"/>
         <figcaption>Iris Inferencing and Deployment</figcaption>
     </figure>
 </p>
