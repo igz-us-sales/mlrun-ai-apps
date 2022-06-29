@@ -1,4 +1,4 @@
-# Iris UI
+# MLRun AI Apps
 
 ## Overview
 This is a simple [Streamlit](https://streamlit.io/) application that connects to a backend [MLRun model serving function](https://docs.mlrun.org/en/latest/serving/model-serving-get-started.html).
