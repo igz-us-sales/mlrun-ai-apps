@@ -15,7 +15,15 @@ def heart_disease():
 
     HEART_CLASSES = config["heart_classes"]
     RESTECG_CLASSES = config["restecg_classes"]
-    DEPLOYMENT_CODE = pathlib.Path(config["snippets"]["deployment_code"]).read_text()
+    DEPLOYMENT_CODE_1 = pathlib.Path(
+        config["snippets"]["deployment_code_1"]
+    ).read_text()
+    DEPLOYMENT_CODE_2 = pathlib.Path(
+        config["snippets"]["deployment_code_2"]
+    ).read_text()
+    DEPLOYMENT_CODE_3 = pathlib.Path(
+        config["snippets"]["deployment_code_3"]
+    ).read_text()
     DEPLOYMENT_LOGS = pathlib.Path(config["snippets"]["deployment_logs"]).read_text()
     INFERENCING_CODE = pathlib.Path(config["snippets"]["inferencing_code"]).read_text()
 
@@ -189,17 +197,6 @@ def heart_disease():
     # Behind the scenes #
     #####################
 
-    # Raw JSON from model
-    st.subheader("Behind the Scenes - Raw Model Output")
-    if "heart_prediction" in st.session_state:
-        with st.spinner("Predicting..."):
-            st.write(
-                "Try expanding the JSON output to see what the record looks like at each point in the graph. You can see the original, one hot encoded, formatted, prediction, etc. This shows how the event is transformed in real-time based on the defined inference graph."
-            )
-            st.json(resp, expanded=False)
-    else:
-        st.info("Please Make Prediction")
-
     # Replace inference display placeholder with model and input data
     st.subheader("Behind the Scenes - Inferencing")
     record = {
@@ -221,5 +218,19 @@ def heart_disease():
     st.code(inference_display, language="python")
 
     st.subheader("Behind the Scenes - Deployment")
-    st.code(DEPLOYMENT_CODE, language="python")
-    st.code(DEPLOYMENT_LOGS, language="bash")
+    st.code(DEPLOYMENT_CODE_1, language="python")
+    with st.expander("Configuration and Helper Functions"):
+        st.code(DEPLOYMENT_CODE_2, language="python")
+    st.code(DEPLOYMENT_CODE_3, language="python")
+    # st.code(DEPLOYMENT_LOGS, language="bash")
+
+    # Raw JSON from model
+    st.subheader("Behind the Scenes - Raw Model Output")
+    if "heart_prediction" in st.session_state:
+        with st.spinner("Predicting..."):
+            st.write(
+                "Try expanding the JSON output to see what the record looks like at each point in the graph. You can see the original, one hot encoded, formatted, prediction, etc. This shows how the event is transformed in real-time based on the defined inference graph."
+            )
+            st.json(resp, expanded=False)
+    else:
+        st.info("Please Make Prediction")

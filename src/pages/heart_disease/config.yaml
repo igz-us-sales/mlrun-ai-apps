@@ -44,7 +44,9 @@ one_hot_encoder_mapping:
   - fixed_defect
 
 snippets:
-  deployment_code: pages/heart_disease/snippets/deployment.py
+  deployment_code_1: pages/heart_disease/snippets/deployment_1.py
+  deployment_code_2: pages/heart_disease/snippets/deployment_2.py
+  deployment_code_3: pages/heart_disease/snippets/deployment_3.py
   deployment_logs: pages/heart_disease/snippets/deployment_logs.txt
   inferencing_code: pages/heart_disease/snippets/inferencing.py
 

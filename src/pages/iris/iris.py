@@ -115,4 +115,4 @@ def iris():
 
     st.subheader("Behind the Scenes - Deployment")
     st.code(DEPLOYMENT_CODE, language="python")
-    st.code(DEPLOYMENT_LOGS, language="bash")
+    # st.code(DEPLOYMENT_LOGS, language="bash")
